@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: darkgray;
+}
+.card{
+    width: 250px;
+    height: 400px;
+    background-color: grey;
+    border-radius: 30px;
+    position: relative;
+}
+.personalinfos img{
+    width: 100%;  
+    border-radius: 30px;
+    position: relative;
+}
+.iconoverlays{
+    width: 100%;
+    height: 76%;
+    position: absolute;
+    border-radius: inherit;
+    background-color: rgba(0,0,0, 0.3);
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.iconoverlays:hover{
+    opacity: 1;
+}
+.iconoverlayblurs{
+    backdrop-filter: blur(10px);
+}
+.iconoverlays > *{
+    transform: translateY(30px);
+}
+.iconoverlays:hover > *{
+    transform: translateY(0);
+    transition: all .3s;
+}
+.iconcontainers{
+    position: relative;
+}
+.spacings{
+    color: pink;
+    letter-spacing: 1px;
+}
+
+.iconlists{
+    padding: 0;
+    margin: 0;
+    margin-top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconlists li{
+    list-style-type: none;
+    margin: 0 4px;
+}
+.iconlists li a{
+    /* padding: 0;
+    margin: 0; */
+    /* border-radius: 50%; */
+    text-decoration: none;
+    /* display: block; */
+    /* margin: 0 3px; */
+}
+.iconlists li i{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
